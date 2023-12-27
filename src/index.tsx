@@ -11,10 +11,10 @@ import {browserHistory} from './browser-history.ts';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-store.dispatch(resetMainPage());
-store.dispatch(checkAuthAction());
 store.dispatch(fetchFilmsAction());
 store.dispatch(fetchPromoFilmAction());
+store.dispatch(checkAuthAction());
+store.dispatch(resetMainPage());
 store.dispatch(fetchFavoriteFilmsAction());
 
 const root = ReactDOM.createRoot(
