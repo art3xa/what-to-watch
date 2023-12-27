@@ -31,7 +31,7 @@ export function AddInListButton({filmId, isFavorite}: AddInListButtonProps) {
     return () => {
       isMounted = false;
     };
-  }, [dispatch, isFavorite]);
+  }, [dispatch, isFavorite, authStatus]);
   const handleButtonClick = () => {
     if (authStatus !== AuthStatusEnum.Auth) {
       navigate(AppRoute.SignIn);
